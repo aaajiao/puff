@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		141810E118D6123B0003D174 /* intro.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 141810E018D6123B0003D174 /* intro.m4v */; };
+		1420AEC718C630DE00EF468B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420AEC618C630DE00EF468B /* Foundation.framework */; };
+		1420AEC918C630DE00EF468B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420AEC818C630DE00EF468B /* CoreGraphics.framework */; };
+		1420AECB18C630DE00EF468B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420AECA18C630DE00EF468B /* UIKit.framework */; };
+		1420AED118C630DE00EF468B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1420AECF18C630DE00EF468B /* InfoPlist.strings */; };
+		1420AED318C630DE00EF468B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1420AED218C630DE00EF468B /* main.m */; };
+		1420AED718C630DE00EF468B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1420AED618C630DE00EF468B /* AppDelegate.m */; };
+		1420AEDA18C630DE00EF468B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420AED818C630DE00EF468B /* Main.storyboard */; };
+		1420AEDF18C630DE00EF468B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1420AEDE18C630DE00EF468B /* Images.xcassets */; };
+		1420AEE618C630DE00EF468B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420AEE518C630DE00EF468B /* XCTest.framework */; };
+		1420AEE718C630DE00EF468B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420AEC618C630DE00EF468B /* Foundation.framework */; };
+		1420AEE818C630DE00EF468B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420AECA18C630DE00EF468B /* UIKit.framework */; };
+		1420AEF018C630DE00EF468B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1420AEEE18C630DE00EF468B /* InfoPlist.strings */; };
+		1420AEF218C630DE00EF468B /* BlowVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1420AEF118C630DE00EF468B /* BlowVideoTests.m */; };
+		1420AEFF18C631B800EF468B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1420AEFE18C631B800EF468B /* AVFoundation.framework */; };
+		142D653618C6450F007ADAFD /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142D653518C6450F007ADAFD /* IntroViewController.m */; };
+		142D653A18C6457B007ADAFD /* BlowVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142D653918C6457B007ADAFD /* BlowVideoViewController.m */; };
+		142D653C18C646CF007ADAFD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142D653B18C646CF007ADAFD /* MediaPlayer.framework */; };
+		142D653E18C646E6007ADAFD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142D653D18C646E6007ADAFD /* CoreAudio.framework */; };
+		14627A8318D31268007BE003 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 14627A7F18D31268007BE003 /* TBXML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14627A8418D31268007BE003 /* FcpXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 14627A8218D31268007BE003 /* FcpXMLParser.m */; };
+		14627A8618D312AA007BE003 /* timeMark.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 14627A8518D312AA007BE003 /* timeMark.fcpxml */; };
+		149C720618D3217C00B4AC2C /* movie.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 149C720518D31EDF00B4AC2C /* movie.m4v */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1420AEE918C630DE00EF468B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1420AEBB18C630DE00EF468B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1420AEC218C630DE00EF468B;
+			remoteInfo = BlowVideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		141810E018D6123B0003D174 /* intro.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.m4v; sourceTree = "<group>"; };
+		1420AEC318C630DE00EF468B /* Puff!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puff!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1420AEC618C630DE00EF468B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1420AEC818C630DE00EF468B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1420AECA18C630DE00EF468B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1420AECE18C630DE00EF468B /* Puff!-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Puff!-Info.plist"; sourceTree = "<group>"; };
+		1420AED018C630DE00EF468B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1420AED218C630DE00EF468B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1420AED418C630DE00EF468B /* Puff!-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Puff!-Prefix.pch"; sourceTree = "<group>"; };
+		1420AED518C630DE00EF468B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1420AED618C630DE00EF468B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1420AED918C630DE00EF468B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1420AEDE18C630DE00EF468B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1420AEE418C630DE00EF468B /* Puff!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Puff!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1420AEE518C630DE00EF468B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1420AEED18C630DE00EF468B /* Puff!Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Puff!Tests-Info.plist"; sourceTree = "<group>"; };
+		1420AEEF18C630DE00EF468B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1420AEF118C630DE00EF468B /* BlowVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlowVideoTests.m; sourceTree = "<group>"; };
+		1420AEFE18C631B800EF468B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		142D653418C6450F007ADAFD /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		142D653518C6450F007ADAFD /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		142D653818C6457B007ADAFD /* BlowVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlowVideoViewController.h; sourceTree = "<group>"; };
+		142D653918C6457B007ADAFD /* BlowVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlowVideoViewController.m; sourceTree = "<group>"; };
+		142D653B18C646CF007ADAFD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		142D653D18C646E6007ADAFD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		14627A7F18D31268007BE003 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		14627A8018D31268007BE003 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		14627A8118D31268007BE003 /* FcpXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FcpXMLParser.h; sourceTree = "<group>"; };
+		14627A8218D31268007BE003 /* FcpXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FcpXMLParser.m; sourceTree = "<group>"; };
+		14627A8518D312AA007BE003 /* timeMark.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = timeMark.fcpxml; sourceTree = "<group>"; };
+		149C720518D31EDF00B4AC2C /* movie.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = movie.m4v; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1420AEC018C630DE00EF468B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142D653E18C646E6007ADAFD /* CoreAudio.framework in Frameworks */,
+				142D653C18C646CF007ADAFD /* MediaPlayer.framework in Frameworks */,
+				1420AEFF18C631B800EF468B /* AVFoundation.framework in Frameworks */,
+				1420AEC918C630DE00EF468B /* CoreGraphics.framework in Frameworks */,
+				1420AECB18C630DE00EF468B /* UIKit.framework in Frameworks */,
+				1420AEC718C630DE00EF468B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1420AEE118C630DE00EF468B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1420AEE618C630DE00EF468B /* XCTest.framework in Frameworks */,
+				1420AEE818C630DE00EF468B /* UIKit.framework in Frameworks */,
+				1420AEE718C630DE00EF468B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1420AEBA18C630DE00EF468B = {
+			isa = PBXGroup;
+			children = (
+				14627A8518D312AA007BE003 /* timeMark.fcpxml */,
+				14627A7F18D31268007BE003 /* TBXML.m */,
+				14627A8018D31268007BE003 /* TBXML.h */,
+				14627A8118D31268007BE003 /* FcpXMLParser.h */,
+				14627A8218D31268007BE003 /* FcpXMLParser.m */,
+				1420AECC18C630DE00EF468B /* BlowVideo */,
+				1420AEEB18C630DE00EF468B /* BlowVideoTests */,
+				1420AEC518C630DE00EF468B /* Frameworks */,
+				1420AEC418C630DE00EF468B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1420AEC418C630DE00EF468B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1420AEC318C630DE00EF468B /* Puff!.app */,
+				1420AEE418C630DE00EF468B /* Puff!Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1420AEC518C630DE00EF468B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				142D653D18C646E6007ADAFD /* CoreAudio.framework */,
+				142D653B18C646CF007ADAFD /* MediaPlayer.framework */,
+				1420AEFE18C631B800EF468B /* AVFoundation.framework */,
+				1420AEC618C630DE00EF468B /* Foundation.framework */,
+				1420AEC818C630DE00EF468B /* CoreGraphics.framework */,
+				1420AECA18C630DE00EF468B /* UIKit.framework */,
+				1420AEE518C630DE00EF468B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1420AECC18C630DE00EF468B /* BlowVideo */ = {
+			isa = PBXGroup;
+			children = (
+				142D653718C6451A007ADAFD /* ViewControllers */,
+				1420AED518C630DE00EF468B /* AppDelegate.h */,
+				1420AED618C630DE00EF468B /* AppDelegate.m */,
+				1420AED818C630DE00EF468B /* Main.storyboard */,
+				1420AEDE18C630DE00EF468B /* Images.xcassets */,
+				1420AECD18C630DE00EF468B /* Supporting Files */,
+			);
+			path = BlowVideo;
+			sourceTree = "<group>";
+		};
+		1420AECD18C630DE00EF468B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1420AECE18C630DE00EF468B /* Puff!-Info.plist */,
+				1420AECF18C630DE00EF468B /* InfoPlist.strings */,
+				1420AED218C630DE00EF468B /* main.m */,
+				1420AED418C630DE00EF468B /* Puff!-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1420AEEB18C630DE00EF468B /* BlowVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1420AEF118C630DE00EF468B /* BlowVideoTests.m */,
+				1420AEEC18C630DE00EF468B /* Supporting Files */,
+			);
+			path = BlowVideoTests;
+			sourceTree = "<group>";
+		};
+		1420AEEC18C630DE00EF468B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1420AEED18C630DE00EF468B /* Puff!Tests-Info.plist */,
+				1420AEEE18C630DE00EF468B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		142D653718C6451A007ADAFD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				141810E018D6123B0003D174 /* intro.m4v */,
+				149C720518D31EDF00B4AC2C /* movie.m4v */,
+				142D653418C6450F007ADAFD /* IntroViewController.h */,
+				142D653518C6450F007ADAFD /* IntroViewController.m */,
+				142D653818C6457B007ADAFD /* BlowVideoViewController.h */,
+				142D653918C6457B007ADAFD /* BlowVideoViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1420AEC218C630DE00EF468B /* Puff! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1420AEF518C630DE00EF468B /* Build configuration list for PBXNativeTarget "Puff!" */;
+			buildPhases = (
+				1420AEBF18C630DE00EF468B /* Sources */,
+				1420AEC018C630DE00EF468B /* Frameworks */,
+				1420AEC118C630DE00EF468B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Puff!";
+			productName = BlowVideo;
+			productReference = 1420AEC318C630DE00EF468B /* Puff!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1420AEE318C630DE00EF468B /* Puff!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1420AEF818C630DE00EF468B /* Build configuration list for PBXNativeTarget "Puff!Tests" */;
+			buildPhases = (
+				1420AEE018C630DE00EF468B /* Sources */,
+				1420AEE118C630DE00EF468B /* Frameworks */,
+				1420AEE218C630DE00EF468B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1420AEEA18C630DE00EF468B /* PBXTargetDependency */,
+			);
+			name = "Puff!Tests";
+			productName = BlowVideoTests;
+			productReference = 1420AEE418C630DE00EF468B /* Puff!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1420AEBB18C630DE00EF468B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Elvis;
+				TargetAttributes = {
+					1420AEE318C630DE00EF468B = {
+						TestTargetID = 1420AEC218C630DE00EF468B;
+					};
+				};
+			};
+			buildConfigurationList = 1420AEBE18C630DE00EF468B /* Build configuration list for PBXProject "Puff!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1420AEBA18C630DE00EF468B;
+			productRefGroup = 1420AEC418C630DE00EF468B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1420AEC218C630DE00EF468B /* Puff! */,
+				1420AEE318C630DE00EF468B /* Puff!Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1420AEC118C630DE00EF468B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1420AEDF18C630DE00EF468B /* Images.xcassets in Resources */,
+				1420AED118C630DE00EF468B /* InfoPlist.strings in Resources */,
+				141810E118D6123B0003D174 /* intro.m4v in Resources */,
+				149C720618D3217C00B4AC2C /* movie.m4v in Resources */,
+				1420AEDA18C630DE00EF468B /* Main.storyboard in Resources */,
+				14627A8618D312AA007BE003 /* timeMark.fcpxml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1420AEE218C630DE00EF468B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1420AEF018C630DE00EF468B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1420AEBF18C630DE00EF468B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1420AED718C630DE00EF468B /* AppDelegate.m in Sources */,
+				1420AED318C630DE00EF468B /* main.m in Sources */,
+				142D653A18C6457B007ADAFD /* BlowVideoViewController.m in Sources */,
+				14627A8318D31268007BE003 /* TBXML.m in Sources */,
+				14627A8418D31268007BE003 /* FcpXMLParser.m in Sources */,
+				142D653618C6450F007ADAFD /* IntroViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1420AEE018C630DE00EF468B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1420AEF218C630DE00EF468B /* BlowVideoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1420AEEA18C630DE00EF468B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1420AEC218C630DE00EF468B /* Puff! */;
+			targetProxy = 1420AEE918C630DE00EF468B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1420AECF18C630DE00EF468B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1420AED018C630DE00EF468B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1420AED818C630DE00EF468B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1420AED918C630DE00EF468B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1420AEEE18C630DE00EF468B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1420AEEF18C630DE00EF468B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1420AEF318C630DE00EF468B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1420AEF418C630DE00EF468B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1420AEF618C630DE00EF468B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: wenkai xu (8FJNPSD2NE)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlowVideo/Puff!-Prefix.pch";
+				INFOPLIST_FILE = "BlowVideo/Puff!-Info.plist";
+				PRODUCT_NAME = "Puff!";
+				PROVISIONING_PROFILE = "4215C2E8-B006-429C-A04A-B0651842A4BE";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1420AEF718C630DE00EF468B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: wenkai xu (8FJNPSD2NE)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlowVideo/Puff!-Prefix.pch";
+				INFOPLIST_FILE = "BlowVideo/Puff!-Info.plist";
+				PRODUCT_NAME = "Puff!";
+				PROVISIONING_PROFILE = "4215C2E8-B006-429C-A04A-B0651842A4BE";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1420AEF918C630DE00EF468B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlowVideo.app/BlowVideo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlowVideo/BlowVideo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BlowVideoTests/Puff!Tests-Info.plist";
+				PRODUCT_NAME = "Puff!Tests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1420AEFA18C630DE00EF468B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlowVideo.app/BlowVideo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlowVideo/BlowVideo-Prefix.pch";
+				INFOPLIST_FILE = "BlowVideoTests/Puff!Tests-Info.plist";
+				PRODUCT_NAME = "Puff!Tests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1420AEBE18C630DE00EF468B /* Build configuration list for PBXProject "Puff!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1420AEF318C630DE00EF468B /* Debug */,
+				1420AEF418C630DE00EF468B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1420AEF518C630DE00EF468B /* Build configuration list for PBXNativeTarget "Puff!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1420AEF618C630DE00EF468B /* Debug */,
+				1420AEF718C630DE00EF468B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1420AEF818C630DE00EF468B /* Build configuration list for PBXNativeTarget "Puff!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1420AEF918C630DE00EF468B /* Debug */,
+				1420AEFA18C630DE00EF468B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1420AEBB18C630DE00EF468B /* Project object */;
+}
