@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="v2N-kS-SdW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="Page1" id="vXZ-lx-hvc" customClass="IntroViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B3h-L4-0cH"/>
+                        <viewControllerLayoutGuide type="bottom" id="T8t-J1-uw6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rz-Ky-M0n">
+                                <rect key="frame" x="143" y="257" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qq5-68-G0f" userLabel="showEggView">
+                                <rect key="frame" x="170" y="0.0" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="gUF-p3-zHU"/>
+                                    <constraint firstAttribute="height" constant="50" id="kEI-w9-3Zj"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showEggView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kkh-QQ-yAe"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyb-GX-qic" userLabel="eggView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4q8-Ki-xTu" userLabel="closeEggView">
+                                        <rect key="frame" x="170" y="0.0" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="LFt-bt-MI9"/>
+                                            <constraint firstAttribute="width" constant="150" id="opb-F4-fNx"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeEggView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E0m-9L-qH3"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portrait" translatesAutoresizingMaskIntoConstraints="NO" id="j9W-Zm-zEv">
+                                        <rect key="frame" x="62" y="100" width="197" height="230"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sA8-Ng-0Vp" userLabel="url Button">
+                                        <rect key="frame" x="145" y="417" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" image="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openUrl:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fLV-Bn-W5s"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="j9W-Zm-zEv" secondAttribute="centerX" id="C4f-lg-D1a"/>
+                                    <constraint firstItem="4q8-Ki-xTu" firstAttribute="top" secondItem="cyb-GX-qic" secondAttribute="top" id="NvZ-UJ-Z1L"/>
+                                    <constraint firstAttribute="trailing" secondItem="4q8-Ki-xTu" secondAttribute="trailing" id="dsL-M7-n8K"/>
+                                    <constraint firstAttribute="trailing" secondItem="4q8-Ki-xTu" secondAttribute="trailing" id="oyJ-Ks-10R"/>
+                                    <constraint firstAttribute="bottom" secondItem="sA8-Ng-0Vp" secondAttribute="bottom" constant="80" id="rhl-Oi-fuM"/>
+                                    <constraint firstAttribute="centerX" secondItem="sA8-Ng-0Vp" secondAttribute="centerX" id="vef-OJ-bE2"/>
+                                    <constraint firstItem="j9W-Zm-zEv" firstAttribute="top" secondItem="4q8-Ki-xTu" secondAttribute="bottom" constant="50" id="xU0-jJ-x4h"/>
+                                    <constraint firstItem="4q8-Ki-xTu" firstAttribute="top" secondItem="cyb-GX-qic" secondAttribute="top" id="yI1-Fe-kLo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cyb-GX-qic" secondAttribute="trailing" id="QZL-Lc-Yms"/>
+                            <constraint firstItem="cyb-GX-qic" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="c46-wp-Rwh"/>
+                            <constraint firstItem="T8t-J1-uw6" firstAttribute="top" secondItem="cyb-GX-qic" secondAttribute="bottom" id="qhW-SK-4IZ"/>
+                            <constraint firstItem="cyb-GX-qic" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="rUj-Bu-A2p"/>
+                            <constraint firstItem="qq5-68-G0f" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="sj8-Sn-A0q"/>
+                            <constraint firstAttribute="trailing" secondItem="qq5-68-G0f" secondAttribute="trailing" id="tTg-7z-Xep"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="eggView" destination="cyb-GX-qic" id="ayn-Fv-eZQ"/>
+                        <outlet property="linkButton" destination="sA8-Ng-0Vp" id="hUy-gV-Ter"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105" y="412"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BkE-PY-mcg">
+            <objects>
+                <viewController id="v2N-kS-SdW" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wVz-Rj-X1w"/>
+                        <viewControllerLayoutGuide type="bottom" id="zGn-2K-NBy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5gY-xc-OHG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gL-24-5mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="1060"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Q1q-vl-jCD">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="AK8-eS-QI7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96P-Eu-nGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="1060"/>
+        </scene>
+        <!--Blow Video View Controller-->
+        <scene sceneID="kkl-ch-jpa">
+            <objects>
+                <viewController storyboardIdentifier="Page2" wantsFullScreenLayout="YES" id="DLL-xc-QGi" customClass="BlowVideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jmL-m1-40g"/>
+                        <viewControllerLayoutGuide type="bottom" id="dWe-v3-cHm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RWX-3l-MSh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puff!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6e-Sx-FKf">
+                                <rect key="frame" x="119" y="301" width="82" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIT-eb-2zw">
+                                <rect key="frame" x="136" y="475" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BLOW!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blowUp:" destination="DLL-xc-QGi" eventType="touchUpInside" id="RyW-ye-QtQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="blowActive" destination="pIT-eb-2zw" id="PLG-FA-07Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="onN-1M-lQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-523" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="portrait" width="197" height="230"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
